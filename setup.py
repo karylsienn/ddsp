@@ -54,7 +54,7 @@ setuptools.setup(
         'numpy<1.24',
         'scipy<=1.10.1',
         'six',
-        'tensorflow<=2.11',
+        'tensorflow-macos<=2.11' if sys.platform == 'darwin' else 'tensorflow<=2.11',
         'tensorflowjs<3.19',
         'tensorflow-probability<=0.19',
         'tensorflow-datasets<=4.9',
